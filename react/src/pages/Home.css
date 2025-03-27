@@ -5,8 +5,8 @@ html, body {
     align-items: center;
     background-position: center;
     background-size: cover;
-    background-image: url("C:\Users\02554\Documents\Programming\שנה ב\React\project\React-project\dreamy-aesthetic-color-year-tones-nature-landscape copy.jpg");
-}/* עיצוב כללי */
+    background-image: url("../style/dreamy-aesthetic-color-year-tones-nature-landscape%20copy.jpg");
+  }/* עיצוב כללי */
 
 #root{
   margin: auto;
