@@ -1,0 +1,83 @@
+.add-producer-form{
+    max-height: 80vh;
+    /* overflow-y: auto; */
+    width: 90%;
+}
+.producer-card {
+    background: #ffffff;
+    border-radius: 100px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 60%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* צל כדי להוסיף עומק */
+    text-align: center;
+    border: 0px solid black;
+}
+
+#title{
+    position: absolute;
+    bottom:  80%;
+    font-size: 25px;
+}
+
+label {
+    margin: auto;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #333;
+    flex-grow: 1;
+}
+.submit-button{
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3); /* צל כדי להוסיף עומק */
+    border: 0px solid #d1d1d6;
+    border-radius: 100px; /* פינות מעוגלות */
+    background-color: #8c8b8b; /* חום-ורוד עם שקיפות של 40% */
+    font-size: 1em;
+    color: rgba(228, 180, 163, 0.7);
+    margin-top: 20%;
+    transition: all 0.3s ease;
+
+}
+
+.submit-button:hover {
+    background: #848383;
+    transform: scale(1.1);
+}
+.event-list{
+    width: 100%;
+    margin-top: 5%;
+}
+.button-edit{
+    background-color: transparent;
+    border: 0px;
+    padding: 2%;
+    margin: auto;
+    font-size: 0.8em;
+    font-weight: 100;
+    color: #333;
+    flex-grow: 1;
+    transition: all 0.3s ease;
+    border-radius: 25px;
+
+}
+h2{
+    color: #333;
+    font-weight: 200;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    background: #b6c0c1;
+    border-radius: 25px;
+    transform: scale(1.1);
+}
