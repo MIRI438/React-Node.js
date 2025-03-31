@@ -36,26 +36,12 @@ cd frontend
 npm start
 ```
 
-### **4. התחברות למסד הנתונים MongoDB**
-ודא שהחיבור למסד הנתונים מוגדר בקובץ `server.js` כך שהאפליקציה תוכל להתחבר אליו מכל מחשב:
-```js
-const mongoose = require('mongoose');
-
-mongoose.connect('mongodb+srv://username:password@cluster0.mongodb.net/dbname?retryWrites=true&w=majority', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-})
-.then(() => console.log('MongoDB connected'))
-.catch(err => console.log('MongoDB connection error:', err));
-```
 
 **שימו לב:** יש להחליף את `username`, `password` ו-`dbname` בפרטי החיבור הנכונים.
 
-### **5. בדיקות**
+### **4. בדיקות**
 לאחר ההפעלה, ניתן לבדוק שהשרת פועל על ידי כניסה לכתובת:
 ```
-http://localhost:3000
-```
+http://localhost:5173
 
-אם מדובר בפרויקט עם React, יש לבדוק גם את כתובת ה-Frontend (לרוב `http://localhost:5173` או `http://localhost:3001`).
 
