@@ -18,7 +18,7 @@ npm install
 ### ** הפעלת ה-Frontend (React)**
 במערכת Windows/Linux/Mac:
 ```sh
-cd/react/src
+cd react\src
 npm run dev
 ```
 
