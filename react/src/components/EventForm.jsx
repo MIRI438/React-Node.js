@@ -1,7 +1,7 @@
 import { creatEvent } from "../services/api";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./EventForm.css"; // ייבוא קובץ ה-CSS
+import "../style/EventForm.css"; // ייבוא קובץ ה-CSS
 
 const AddEvent =  () => {
     const navigate = useNavigate();

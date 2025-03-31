@@ -1,6 +1,6 @@
 import { readAllEvents } from "../services/api";
 import React, { useEffect, useState } from "react";
-import "./EventList.css";
+import "../style/EventList.css";
 import { useNavigate } from "react-router-dom";
 
 export const EventList = () => {

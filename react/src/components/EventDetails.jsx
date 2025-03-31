@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { readEvent } from "../services/api"; 
 import { Link  } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
-import "./EventDetails.css";
+import "../style/EventDetails.css";
 
 
 

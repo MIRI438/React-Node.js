@@ -3,8 +3,8 @@ import { readAllEvents, deleteEvent, updateProducer } from "../services/api";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import "./ProducerForm.css";
-import "./EventList.css";
+import "../style/ProducerForm.css";
+import "../style/EventList.css";
 
 const ProducerLogin = () => {
   const navigate = useNavigate();

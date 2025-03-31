@@ -1,6 +1,6 @@
 import { creatProducer } from "../services/api";
 import React, { useState } from "react";
-import "./ProducerForm.css"
+import "../style/ProducerForm.css"
 import { useNavigate } from "react-router-dom";
 
 

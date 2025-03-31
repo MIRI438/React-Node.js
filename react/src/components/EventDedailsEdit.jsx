@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { readEvent, updateEvent } from "../services/api";
-import './EventDetails.css';
+import '../style/EventDetails.css';
 
 const EventDetailsEdit = () => {
     const { id } = useParams();
