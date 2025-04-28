@@ -5,22 +5,25 @@ const uri = "http://localhost:3000/api/";
 
 
 export const creatProducer = (producerData) => {
-    fetch(uri + "producer",{
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(producerData)
-    }).then(response => {
-        if (!response.ok)
-            throw new Error("Network response was not ok");
+    return fetch(uri + "producer", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(producerData)
+    })
+      .then(response => {
+        if (!response.ok) throw new Error("Network response was not ok");
         return response.json();
-    }).then(data => {
+      })
+      .then(data => {
         console.log("Producer created:", data);
-        return data;  
-    }).catch(error => {
+        return data; 
+      })
+      .catch(error => {
         console.error("Fetch error:", error);
-        throw error;  
-    });
-};
+        throw error;
+      });
+  };
+  
 
 export const updateProducer = (id, updateData) => {
     fetch(`${uri}producer/${id}`, {

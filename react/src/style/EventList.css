@@ -138,7 +138,7 @@ html, body {
 /* גלילה נעימה */
 .event-list-container {
     max-height: 80vh;
-    /* overflow-y: auto; */
+    overflow-y: auto;
     width:100%;
 }
 
@@ -146,10 +146,7 @@ html, body {
     width: 6px;
 }
 
-.event-list-container::-webkit-scrollbar-thumb {
-    background-color: #007aff;
-    border-radius: 10px;
-}
+
 
 /* תפריט חיפוש */
 .search-icon {

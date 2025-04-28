@@ -104,6 +104,7 @@ const ProducerLogin = () => {
         <div className="time">11:59</div>
         <div className="battery">88%</div>
       </div>
+      <div className="event-list-container">
       <input
         type="text"
         placeholder="הכנס קוד מפיק"
@@ -120,7 +121,10 @@ const ProducerLogin = () => {
 
       <button className="back-button" onClick={() => navigate("/ProducerDashboard")}>
         ❮
-      </button>
+      </button> <br />
+    
+      <a className="submit-button" href="./EventForm">הוספת אירוע</a>
+
 
       {/* Display producer details only after the producer is found */}
       {producer && (
@@ -160,13 +164,16 @@ const ProducerLogin = () => {
             {filteredEvents.map(event => (
               <div key={event._id} className="event-card">
                 <h2 onClick={() => handleEventClick(event._id)}>{event.name}</h2>
-                <a className="button-edit" href="./EventForm">הוספה</a>
                 <a className="button-edit" onClick={() => handleDelete(event._id)}>מחיקה</a>
               </div>
             ))}
+
           </div>
+         
+
         </>
       )}
+       </div>
     </div>
   );
 };

@@ -1,3 +1,9 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* כדי למנוע גלילה חיצונית */
+}
+
 .add-producer-form{
     max-height: 80vh;
     overflow-y: auto;
@@ -17,6 +23,21 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* צל כדי להוסיף עומק */
     text-align: center;
     border: 0px solid black;
+}
+.status-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 12px;
+    color: #333;
+    border-bottom: 1px solid #e0e0e0;
 }
 .event-card{
     width: 80%;
@@ -90,4 +111,16 @@ a:hover{
 }
 .details {
     padding: 3%
-  }
+}
+.event-list-container {
+    max-height: calc(80vh - 60px); /* גובה מקסימלי של 80% מהמסך פחות מקום לכפתור */
+    overflow-y: auto;
+    width: 100%;
+    padding-bottom: 60px; /* מרווח תחתון כדי למנוע חפיפה עם הכפתור */
+}
+
+.event-list-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+

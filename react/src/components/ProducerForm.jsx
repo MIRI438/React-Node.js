@@ -16,8 +16,9 @@ const ProducerForm = () => {
     e.preventDefault();
     const newProducer = { name, email, phone, shortDescription };
     try {
-      await creatProducer(newProducer);
+      const saveProducer = await creatProducer(newProducer);
       alert("המפיק נוסף בהצלחה!");
+      alert(`הקוד מפיק שלך הוא ${saveProducer.producer._id} יש לשמור את זה!`);
     } catch (error) {
       console.error("Error adding producer:", error);
     }
